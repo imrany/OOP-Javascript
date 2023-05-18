@@ -1,3 +1,4 @@
+// classes
 class animal{
     name: string
     specie: string
@@ -15,3 +16,4 @@ class animal{
 let bingo=new animal("bingo","dog")
 console.log(bingo)
 console.log(bingo.sing)
+
