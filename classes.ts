@@ -1,16 +1,16 @@
-import { TypeName } from "./types";
-
-function dogObject(name:string, age:number){
-    let dog=Object.create(constructorObject)
-    dog.name=name
-    dog.age=age
-    return dog
-}
-let constructorObject={
-    speak:()=>{
-        return "I am a dog"
+class animal{
+    name: string
+    specie: string
+    constructor(name:string,specie:string){
+        this.name=name
+        this.specie=specie
+    }
+    sing(){
+        return  `${this.name} can sing`
+    }
+    dance(){
+        return `${this.name} can dance`
     }
 }
-
-const bingo=dogObject("bingo",24)
-console.log(bingo)
+let bingo=new animal("bingo","dog")
+console.log(bingo.sing)
