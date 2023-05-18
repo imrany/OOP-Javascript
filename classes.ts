@@ -1,9 +1,16 @@
 import { TypeName } from "./types";
 
-let username:TypeName={
-    first_name:"Imran",
-    last_name:"Matano"
+function dogObject(name:string, age:number){
+    let dog=Object.create(constructorObject)
+    dog.name=name
+    dog.age=age
+    return dog
+}
+let constructorObject={
+    speak:()=>{
+        return "I am a dog"
+    }
 }
 
-console.log(username.first_name)
-console.log(username.hasOwnProperty("middle_name"))
+const bingo=dogObject("bingo",24)
+console.log(bingo)
