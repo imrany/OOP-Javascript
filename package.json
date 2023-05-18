@@ -1,0 +1,21 @@
+{
+  "name": "oop-javascript",
+  "version": "1.0.0",
+  "description": "object oriented programming with javascript",
+  "main": "/dist/index.js",
+  "scripts": {
+    "dev": "ts-node classes.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "oop-js"
+  },
+  "keywords": [
+    "oop",
+    "object",
+    "oriented",
+    "programming"
+  ],
+  "author": "imrany",
+  "license": "MIT"
+}
